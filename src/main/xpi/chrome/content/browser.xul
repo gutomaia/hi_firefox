@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://hi_ff/skin/skin.css" type="text/css"?> 
+<!DOCTYPE hi_ff SYSTEM "chrome://hi_ff/locale/translations.dtd">
+<overlay id="sample" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+		<script src="hellow.js" />
+		<script src="hi_ff.js" />
+
+		<menupopup id="menu_ToolsPopup"> 
+			<menuitem label="&hiFirefoxLogin;" key="hi-firefox-login-key" oncommand="hi.login()"/> 
+		</menupopup>
+
+		<keyset>
+			<key id="hi-firefox-login-key" modifiers="accel alt shift" key="C" oncommand="hi.login()"/>
+		</keyset>
+<!--
+		<statusbar id="status-bar">
+			<statusbarpanel id="link-target-finder-status-bar-icon" class="statusbarpanel-iconic" src="chrome://linktargetfinder/skin/status-bar.png" tooltiptext="&runlinktargetfinder;" onclick="linkTargetFinder.run()" />
+		</statusbar>
+-->
+<!--
+		<toolbarpalette id="BrowserToolbarPalette">
+			<toolbarbutton id="link-target-finder-toolbar-button" label="Link Target Finder" tooltiptext="&runlinktargetfinder;" oncommand="linkTargetFinder.run()"/>
+		</toolbarpalette>
+-->
+</overlay>

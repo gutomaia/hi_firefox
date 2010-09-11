@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+ <prefwindow title="Hi FireFox Preferences" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"> 
+	<prefpane label="Hi FireFox Preferences">
+		<preferences>
+			<preference id="hi-firefox-msn-username" name="extensions.hi.firefox.msn.username" type="string"/>
+			<preference id="hi-firefox-msn-password" name="extensions.hi.firefox.msn.password" type="string"/>			
+		</preferences>		
+		<groupbox>
+			<caption label="Settings"/>
+			<grid>
+				<columns>
+					<column flex="10"/>
+					<column flex="10"/>
+				</columns>
+				<rows>
+					<row>
+						<label control="username" value="Username"/>
+						<textbox id="username" cols="30" preference="hi-firefox-msn-username" value="username@hotmail.com" />
+					</row>
+					<row>
+						<label control="password" value="Password"/>
+						<textbox id="password" cols="30" preference="hi-firefox-msn-password" />
+					</row>
+
+				</rows>
+			</grid>
+		</groupbox>		
+	</prefpane> 
+</prefwindow>

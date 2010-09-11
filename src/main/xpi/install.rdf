@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+	<Description about="urn:mozilla:install-manifest">
+		<em:id>hi_ff@guto.net</em:id>
+		<em:name>Hi Firefox</em:name>
+		<em:version>1.0</em:version>
+		<em:type>2</em:type>
+		<em:creator>Gustavo Maia Neto (gutomaia)</em:creator>
+		<em:description>Prof of concept for HellowJs</em:description>
+		<em:homepageURL>http://guto.net/</em:homepageURL>
+		<em:optionsURL>chrome://hi_ff/content/options.xul</em:optionsURL>
+
+		<em:targetApplication>
+			<Description>
+				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+				<em:minVersion>2.0</em:minVersion>
+				<em:maxVersion>3.7.*</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+	</Description>      
+</RDF>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assembler>
+	<scripts>
+		<script>
+			<fileName>hi_ff.js</fileName>
+			<includes>
+				<include>hi/firefox_logger.js</include>
+				<include>hi/console_debug.js</include>
+				<include>hi/firefox_socket.js</include>
+				<include>hi/hi.js</include>
+			</includes>
+		</script>
+	</scripts>
+</assembler>

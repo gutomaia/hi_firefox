@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly>
+	<id>release</id>
+	<formats>
+		<format>dir</format>
+		<format>zip</format>
+	</formats>
+	<includeBaseDirectory>false</includeBaseDirectory>
+	<dependencySets>
+		<dependencySet>
+			<unpack>true</unpack>
+			<!-- <unpackOptions> <includes>hellow.js</includes> </unpackOptions> -->
+			<includes>
+				<include>*:jar:*</include>
+			</includes>
+			<outputDirectory>/chrome/content</outputDirectory>
+		</dependencySet>
+	</dependencySets>
+	<fileSets>
+		<fileSet>
+			<directory>src/main/xpi</directory>
+			<includes>
+				<include>**/*</include>
+			</includes>
+			<outputDirectory>/</outputDirectory>
+		</fileSet>
+	</fileSets>
+	<files>
+		<file>
+			<source>target/scripts/hi_ff.js</source>
+			<outputDirectory>/chrome/content</outputDirectory>
+		</file>
+	</files>
+</assembly>
